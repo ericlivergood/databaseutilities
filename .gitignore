@@ -1,0 +1,15 @@
+[Oo]bj/
+[Bb]in/
+*.suo
+*.user
+/TestResults
+*.vspscc
+*.vssscc
+sql/
+*.dbmdl
+*.schemaview
+*.log
+*.refactorlog
+/packages/*
+!/packages/repositories.config
+
