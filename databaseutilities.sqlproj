@@ -58,6 +58,9 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Views" />
+    <Folder Include="StoredProcedures" />
+    <Folder Include="CS" />
+    <Folder Include="CS\FileInfo" />
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\110\SqlSchemas\master.dacpac">
@@ -75,5 +78,19 @@
     <Build Include="Views\BlockingChain_vw.sql" />
     <Build Include="Views\GetSQL_vw.sql" />
     <Build Include="Views\GetSQLLite_vw.sql" />
+    <Build Include="StoredProcedures\RestoreBackup_prc.sql" />
+    <Build Include="StoredProcedures\DropDatabase_prc.sql" />
+    <Build Include="Views\DefaultDirectory_vw.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CS\FileInfo\Directories.cs" />
+    <Compile Include="CS\FileInfo\Drives.cs" />
+    <Compile Include="CS\FileInfo\Files.cs" />
+    <Compile Include="CS\FileInfo\Path.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
 </Project>
