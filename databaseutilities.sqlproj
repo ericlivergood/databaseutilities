@@ -61,6 +61,7 @@
     <Folder Include="StoredProcedures" />
     <Folder Include="CS" />
     <Folder Include="CS\FileInfo" />
+    <Folder Include="CS\StringUtilities" />
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\110\SqlSchemas\master.dacpac">
@@ -87,6 +88,9 @@
     <Compile Include="CS\FileInfo\Drives.cs" />
     <Compile Include="CS\FileInfo\Files.cs" />
     <Compile Include="CS\FileInfo\Path.cs" />
+    <Compile Include="CS\StringUtilities\Concatenate.cs" />
+    <Compile Include="CS\StringUtilities\EditDistance.cs" />
+    <Compile Include="CS\StringUtilities\Regex.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
