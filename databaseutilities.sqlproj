@@ -82,6 +82,7 @@
     <Build Include="StoredProcedures\RestoreBackup_prc.sql" />
     <Build Include="StoredProcedures\DropDatabase_prc.sql" />
     <Build Include="Views\DefaultDirectory_vw.sql" />
+    <Build Include="Views\repl_SchemaOptions_vw.sql" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CS\FileInfo\Directories.cs" />
