@@ -62,6 +62,7 @@
     <Folder Include="CS" />
     <Folder Include="CS\FileInfo" />
     <Folder Include="CS\StringUtilities" />
+    <Folder Include="Functions" />
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\110\SqlSchemas\master.dacpac">
@@ -83,6 +84,10 @@
     <Build Include="StoredProcedures\DropDatabase_prc.sql" />
     <Build Include="Views\DefaultDirectory_vw.sql" />
     <Build Include="Views\repl_SchemaOptions_vw.sql" />
+    <Build Include="Functions\repl_AddSchemaOption_fn.sql" />
+    <Build Include="Functions\repl_DefaultSchemaOptions_fn.function.sql" />
+    <Build Include="Functions\repl_GetSchemaOptions_fn.sql" />
+    <Build Include="Functions\repl_IsSchemaOptionSet_fn.sql" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CS\FileInfo\Directories.cs" />
