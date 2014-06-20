@@ -64,6 +64,7 @@
     <Folder Include="CS\StringUtilities" />
     <Folder Include="Functions" />
     <Folder Include="CS\FileOperations" />
+    <Folder Include="StoredProcedures\Jobs" />
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\110\SqlSchemas\master.dacpac">
@@ -89,6 +90,10 @@
     <Build Include="Functions\repl_DefaultSchemaOptions_fn.function.sql" />
     <Build Include="Functions\repl_GetSchemaOptions_fn.sql" />
     <Build Include="Functions\repl_IsSchemaOptionSet_fn.sql" />
+    <Build Include="StoredProcedures\Jobs\StopJob_prc.proc.sql" />
+    <Build Include="StoredProcedures\Jobs\StartJob_prc.proc.sql" />
+    <Build Include="StoredProcedures\Jobs\RestartJob_prc.proc.sql" />
+    <Build Include="StoredProcedures\Jobs\IsJobRunning_prc.proc.sql" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CS\FileInfo\Directories.cs" />
