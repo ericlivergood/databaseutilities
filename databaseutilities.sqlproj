@@ -65,6 +65,7 @@
     <Folder Include="Functions" />
     <Folder Include="CS\FileOperations" />
     <Folder Include="StoredProcedures\Jobs" />
+    <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\110\SqlSchemas\master.dacpac">
@@ -94,6 +95,10 @@
     <Build Include="StoredProcedures\Jobs\StartJob_prc.proc.sql" />
     <Build Include="StoredProcedures\Jobs\RestartJob_prc.proc.sql" />
     <Build Include="StoredProcedures\Jobs\IsJobRunning_prc.proc.sql" />
+    <Build Include="Tables\TimeZone_tbl.sql" />
+    <Build Include="Tables\TimeZoneToTimeZoneOffset_tbl.sql" />
+    <Build Include="Functions\GetLocalTime_fn.sql" />
+    <Build Include="Functions\GetLocalTimeFromUTC_fn.sql" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CS\FileInfo\Directories.cs" />
@@ -109,5 +114,14 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="CS\TimeZoneUtilities\TimeZoneUtilities.csproj">
+      <Name>TimeZoneUtilities</Name>
+      <Project>{868b009b-8e65-46ae-ac22-9c14316ce2a0}</Project>
+      <Private>True</Private>
+      <IsModelAware>True</IsModelAware>
+      <GenerateSqlClrDdl>True</GenerateSqlClrDdl>
+    </ProjectReference>
   </ItemGroup>
 </Project>
