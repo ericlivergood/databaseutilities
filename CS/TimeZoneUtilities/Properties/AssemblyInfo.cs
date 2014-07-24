@@ -8,9 +8,6 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("TimeZoneUtilities")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("The Blackstone Group")]
-[assembly: AssemblyProduct("TimeZoneUtilities")]
-[assembly: AssemblyCopyright("Copyright © The Blackstone Group 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
